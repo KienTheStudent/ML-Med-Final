@@ -290,7 +290,7 @@ def run_phase(phase_name, epochs, optimizer, scheduler):
                 break
 
     model.load_state_dict(best_state)
-    print(f"\n✅ {phase_name} complete. Best κ = {best_kappa:.4f}")
+    print(f"\n{phase_name} complete. Best κ = {best_kappa:.4f}")
     return history
 
 print("Functions ready!")
